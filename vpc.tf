@@ -117,7 +117,7 @@ resource "aws_instance" "instance1_public"{
       associate_public_ip_address = true
       availability_zone = "ap-south-1a"
       key_name = "ATHUL"
-      instance_type = "t2 micro"
+      instance_type = "t2.micro"
       subnet_id = aws_subnet.pubsub.id
       vpc_security_group_ids = [aws_security_group.allow_all.id]
 }
@@ -126,7 +126,7 @@ resource "aws_instance" "instance1_pri"{
       associate_public_ip_address = false
       availability_zone = "ap-south-1b"
       key_name = "ATHUL"
-      instance_type = "t2 micro"
+      instance_type = "t2.micro"
       subnet_id = aws_subnet.prisub.id
       vpc_security_group_ids = [aws_security_group.allow_all.id]
 }
