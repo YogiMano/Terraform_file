@@ -48,7 +48,7 @@ resource "aws_route_table" "pubrt" {
   vpc_id = aws_vpc.myvpc.id
 
   route {
-    cidr_block = "10.0.1.0/24"
+    cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.igw.id
   }
 
@@ -83,7 +83,7 @@ resource "aws_route_table" "prirt" {
     Name = "pri_rt"
   }
 }
-resource "aws_route_table_association" "prirtass" {
+resource "aws_route_table_association" "prirtasso" {
   subnet_id      = aws_subnet.prisub.id
   route_table_id = aws_route_table.prirt.id
 }
@@ -130,3 +130,5 @@ resource "aws_instance" "instance1_pri"{
       subnet_id = aws_subnet.prisub.id
       vpc_security_group_ids = [aws_security_group.allow_all.id]
 }
+
+
