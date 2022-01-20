@@ -1,0 +1,19 @@
+# Terraform document url: https://registry.terraform.io/providers/hashicorp/aws/latest/docs\
+# Iaac ~> Infrastructure as a code 
+# AWS Cloudformation => AWS
+# Hasicorp terraform => all cloud platform
+#TERRAFORM is written in hasicorp language
+
+# ansible => configuration both on-prem/cloud
+# terraform => infrastructure build tool
+
+# code can be reused for later use =>code reuseability
+# prereq => putty,puttygen,visual studio code
+
+#INSTALLATION 
+URL => https://releases.hashicorp.com/terraform/1.1.3/terraform_1.1.3_linux_amd64.zip
+
+
+
+
+
