@@ -113,19 +113,19 @@ resource "aws_security_group" "allow_all" {
   }
 }
 resource "aws_instance" "instance1_public"{
-      ami ="ami-0af25d0df86db00c1"
+      ami ="ami-00d067acc81ae6a03"
       associate_public_ip_address = true
       availability_zone = "ap-south-1a"
-      key_name = "ATHUL"
+      key_name = "2022"
       instance_type = "t2.micro"
       subnet_id = aws_subnet.pubsub.id
       vpc_security_group_ids = [aws_security_group.allow_all.id]
 }
 resource "aws_instance" "instance1_pri"{
-      ami ="ami-0af25d0df86db00c1"
+      ami ="ami-00d067acc81ae6a03"
       associate_public_ip_address = false
       availability_zone = "ap-south-1b"
-      key_name = "ATHUL"
+      key_name = "2022"
       instance_type = "t2.micro"
       subnet_id = aws_subnet.prisub.id
       vpc_security_group_ids = [aws_security_group.allow_all.id]
